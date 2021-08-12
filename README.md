@@ -4,16 +4,16 @@
 
 ## Flexbox :
 
-<input type="checkbox"> flex-direction
-<input type="checkbox"> order
-<input type="checkbox"> justify-content
-<input type="checkbox"> align-items
-<input type="checkbox"> align-self
-<input type="checkbox"> flex-wrap
-<input type="checkbox"> align-content
-<input type="checkbox"> flex-grow
-<input type="checkbox"> flex-shrink
-<input type="checkbox"> flex-basis
+- [ ] flex-direction
+- [ ] order
+- [ ] justify-content
+- [ ] align-items
+- [ ] align-self
+- [ ] flex-wrap
+- [ ] align-content
+- [ ] flex-grow
+- [ ] flex-shrink
+- [ ] flex-basis
 
 ## Grid :
 
