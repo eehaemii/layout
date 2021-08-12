@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        *{padding: 0; margin: 0;}
+        /* common */
+        .wrap{display: flex;justify-content: space-around; height: 100vh; padding: 2em; box-sizing: border-box;}
+        .parent{display: flex;/* Main Axis */justify-content: space-around;padding: 10px;border: 1px solid #dcdcdc;box-sizing: border-box;}
+        .child {width: 100px;height: 100px;background-color: burlywood;font-size: 50px; color: #fff;}
+
+        /* align-self (=align-item) :: height가 없으면 style이 안됨 */
+        .align__self__box{height: 350px;}
+        .align__self:nth-child(2){align-self: center}
+        .align__self:nth-child(3){align-self: flex-end;}
+
+        /* oder */
+        .order{width: 350px;height: 350px;}
+        .oder__box{background-color:cadetblue;}
+        .oder__box:nth-child(1){order:2; align-self: center;}
+        .oder__box:nth-child(2){order:3;}
+    </style>
+</head>
+<body>
+    <div class="wrap"> 
+        <div class="parent align__self__box">
+            <div class="child align__self">1</div>
+            <div class="child align__self">2</div>
+            <div class="child align__self">3</div>
+        </div>
+        <div class="parent order">
+            <div class="child oder__box">1</div>
+            <div class="child oder__box">2</div>
+            <div class="child oder__box">3</div>
+        </div>
+    </div>
+</body>
+</html>
